@@ -1148,6 +1148,53 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Recent Photos Section
+--------------------------------------------------------------*/
+.recent-photos {
+  overflow: hidden;
+}
+
+.recent-photos .swiper-wrapper {
+  height: auto;
+}
+
+.recent-photos .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.recent-photos .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--background-color);
+  border: 1px solid var(--accent-color);
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.recent-photos .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.recent-photos .swiper-slide-active {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .recent-photos .swiper-wrapper {
+    padding: 40px 0;
+  }
+
+  .recent-photos .swiper-slide-active {
+    background: var(--background-color);
+    border: 6px solid var(--accent-color);
+    padding: 4px;
+    z-index: 1;
+    transform: scale(1.2);
+    transition: none;
+  }
+}
+
+/*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
